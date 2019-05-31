@@ -16,4 +16,9 @@ class Genre
       song.genre == self 
    end 
   end 
+  
+  def artists 
+    songs.collect do |song|
+      song.artist = 
+  end 
 end 
