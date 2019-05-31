@@ -13,4 +13,9 @@ class Patient
   def new_appointment(doctor,date)
     Appointment.new(self,doctor,date)
   end 
+  
+  def appointments
+    Appointments.all.select do |a|
+      a.patient
+  end 
 end 
