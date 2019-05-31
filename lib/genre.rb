@@ -12,7 +12,7 @@ class Genre
   end 
   
   def songs 
-     Song.collect do |song| 
+     Song.select do |song| 
       song.genre 
    end 
   end 
