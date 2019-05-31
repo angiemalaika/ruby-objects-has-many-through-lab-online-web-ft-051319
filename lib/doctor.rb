@@ -18,7 +18,7 @@ class Doctor
   
   def appointments
     Appointment.all.select do |a| 
-      a.doctore == self 
+      a.doctor == self 
     end 
   end 
 end 
