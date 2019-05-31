@@ -13,11 +13,12 @@ class Doctor
   end 
   
   def new_appointment(patient, date)
-    Appointment.new(patient, self, date)
+    appointment = Appointment.new(patient, self, date)
   end
   
   def appointments
     
-  
+   Appointment.all.select do |song| 
+      song.artist == self 
   end 
 end 
