@@ -14,5 +14,6 @@ class Genre
   def songs 
      Song.collect do |song| 
       song.genre 
+   end 
   end 
 end 
